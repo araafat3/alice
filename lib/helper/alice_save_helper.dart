@@ -83,7 +83,7 @@ class AliceSaveHelper {
       } else if (isIOS) {
         externalDir = await getApplicationDocumentsDirectory();
       } else {
-        externalDir = await getApplicationCacheDirectory();
+        externalDir = await getExternalStorageDirectory();
       }
       if (externalDir != null) {
         final fileName =
